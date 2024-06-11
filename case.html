@@ -33,7 +33,7 @@
 <style>
     [data-timed-style='fade']{display:none}[data-timed-style='scale']{display:none}
   </style>
-<link rel="icon" type="image/png" href="https://d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/680259/favicon.ico"></link>
+<link rel="icon" type="image/png" href="/d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/680259/favicon.ico"></link>
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -108,7 +108,7 @@
 <div id="col-left-129" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
 <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
 <div class="de elImageWrapper de-image-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_image-84872" data-de-type="img" data-de-editing="false" data-title="image" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 0px; outline: none; cursor: pointer;" aria-disabled="false">
-<img src="https://images.clickfunnels.com/da/752794b0404e09a117408855a0b1e7/ezgif.com-video-to-gif-4-.gif" class="elIMG ximg" alt>
+<img src="https://s5.ezgif.com/tmp/ezgif-5-393191c47f.gif" class="elIMG ximg" alt>
 </div>
 </div>
 </div>
@@ -126,11 +126,44 @@
 </li>
 </ul>
 </div>
-<div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-83130" data-de-type="input" data-de-editing="false" data-title="input" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="email" style="margin-top: 30px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" data-google-font="Montserrat" aria-disabled="false">
-<input type="email" placeholder="Your Email Address Here..." name="email" class="elInput elInput100 elAlign_left elInputMid elInputStyl0 elInputBG1 elInputI0 elInputIBlack elInputIRight ceoinput required1 elInputBR1" data-type="extra">
-</div>
-<div class="de elBTN elMargin0 ui-droppable elAlign_center de-editable" id="button-13943-108" data-de-type="button" data-de-editing="false" data-title="button-cta" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" data-element-theme="customized" data-google-font="Montserrat" aria-disabled="false" data-elbuttontype="1">
-<a href="#submit-form" class="elButton elButtonSize1 elButtonColor1 elButtonPadding2 elButtonTxtColor1 elBTN_b_none elButtonShadowFlatHighlight elBTNone elButtonBlock elBtnHP_40 deCapitalize elBtnVP_10 mfs_18 elButtonFull elButtonCorner10" style="color: rgb(255, 255, 255); background: rgb(185, 14, 223); font-size: 18px;" rel="noopener noreferrer" id="undefined-281-307"><span class="elButtonMain">Give me my free case study</span><span class="elButtonSub">get instant access to the case study video</span></a>
+<form action="https://formspree.io/f/myyrreag" method="POST" onsubmit="handleFormSubmit(event)">
+  <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-83130" data-de-type="input" data-de-editing="false" data-title="input" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="email" style="margin-top: 30px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" data-google-font="Montserrat" aria-disabled="false">
+    <input type="email" placeholder="Your Email Address Here..." name="email" class="elInput elInput100 elAlign_left elInputMid elInputStyl0 elInputBG1 elInputI0 elInputIBlack elInputIRight ceoinput required1 elInputBR1" data-type="extra" required>
+  </div>
+  <div class="de elBTN elMargin0 ui-droppable elAlign_center de-editable" id="button-13943-108" data-de-type="button" data-de-editing="false" data-title="button-cta" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" data-element-theme="customized" data-google-font="Montserrat" aria-disabled="false" data-elbuttontype="1">
+    <button type="submit" class="elButton elButtonSize1 elButtonColor1 elButtonPadding2 elButtonTxtColor1 elBTN_b_none elButtonShadowFlatHighlight elBTNone elButtonBlock elBtnHP_40 deCapitalize elBtnVP_10 mfs_18 elButtonFull elButtonCorner10" style="color: rgb(255, 255, 255); background: rgb(185, 14, 223); font-size: 18px;">
+      <span class="elButtonMain">Give me my free case study</span>
+      <span class="elButtonSub">get instant access to the case study video</span>
+    </button>
+  </div>
+</form>
+
+
+<script>
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = 'https://media-tag.com/case-video';
+      } else {
+        alert('There was an issue with your submission.');
+      }
+    }).catch(error => {
+      console.error('Error:', error);
+      alert('There was an issue with your submission.');
+    });
+  }
+</script>
+
 </div>
 </div>
 </div>
