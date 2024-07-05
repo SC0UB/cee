@@ -127,7 +127,7 @@
 </ul>
 </div>
 
-	<form href="https://media-tag.com/case-video" action="https://formspree.io/f/myzgybeb"   method="POST">
+<form id="myForm" action="https://formspree.io/f/myzgybeb" method="POST" onsubmit="redirectToVideo()">
   <div class="de elInputWrapper de-input-block elAlign_center elMargin0 ui-droppable de-editable" id="tmp_input-83130" data-de-type="input" data-de-editing="false" data-title="input" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" type="email" style="margin-top: 30px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" data-google-font="Montserrat" aria-disabled="false">
     <input type="email" placeholder="Your Email Address Here..." name="email" class="elInput elInput100 elAlign_left elInputMid elInputStyl0 elInputBG1 elInputI0 elInputIBlack elInputIRight ceoinput required1 elInputBR1" data-type="extra" required>
   </div>
@@ -138,6 +138,15 @@
     </button>
   </div>
 </form>
+
+<script>
+  function redirectToVideo() {
+    setTimeout(function() {
+      window.location.href = 'https://media-tag.com/case-video';
+    }, 1000);
+  }
+</script>
+
 
 
 <script>
