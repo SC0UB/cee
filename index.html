@@ -41,6 +41,20 @@
             display: none
         }
     </style>
+      <style>
+    /* Initial state - content is hidden with opacity 0 */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    /* Fade-in state */
+    .fade-in-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
     <link rel="icon" type="image/png" href="/d2saw6je89goi1.cloudfront.net/uploads/digital_asset/file/680259/favicon.ico"></link>
     <script>
         ! function(f, b, e, v, n, t, s) {
@@ -503,36 +517,60 @@
         <div class="dropZoneForSections ui-droppable" style="display: none;">
             <div class="dropIconr"><i class="fa fa-plus"></i></div>
         </div>
-        <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101" id="section--55808-116-151-189" data-title="Section - Clone - Clone - Clone" data-block-color="0074C7"
-            style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255); background-image: url(&quot;https://images.clickfunnels.com/a1/c8a06375354ffb82d8ab0fa724985b/background-case-study.png&quot;);" data-trigger="none"
-            data-animate="fade" data-delay="500">
-            <div class="containerInner ui-sortable">
-                <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--78387-143-186-106" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;"
-                    data-hide-on="desktop">
-                    <div id="col-full-108-149-165-120" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-                        <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"></div>
-                    </div>
+        <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101 fade-in-section" id="section--55808-116-151-189" data-title="Section - Clone - Clone - Clone" data-block-color="0074C7"
+       style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255); background-image: url(&quot;https://images.clickfunnels.com/a1/c8a06375354ffb82d8ab0fa724985b/background-case-study.png&quot;);">
+    <div class="containerInner ui-sortable">
+      <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--78387-143-186-106" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;" data-hide-on="desktop">
+        <div id="col-full-108-149-165-120" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+          <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px"></div>
+        </div>
+      </div>
+      <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--30933" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; outline: none; width: 100%; max-width: 100%;">
+        <div id="col-full-177" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+          <div class="col-inner bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
+            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-80104" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" aria-disabled="false" data-hide-on data-google-font="Montserrat">
+              <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 deUppercase mfs_16 de3pxLetterSpacing" data-bold="inherit" style="text-align: center; font-size: 22px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">
+                <div>
+                  <font color="#fc3792"><b>Free Case Study: </b></font>
                 </div>
-                <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--30933" data-trigger="none" data-animate="fade" data-delay="500" data-title="1 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px auto; outline: none; width: 100%; max-width: 100%;">
-                    <div id="col-full-177" class="col-md-12 innerContent col_left" data-col="full" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
-                        <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
-                            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-80104" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 5px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;"
-                                aria-disabled="false" data-hide-on data-google-font="Montserrat">
-                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 deUppercase mfs_16 de3pxLetterSpacing" data-bold="inherit" style="text-align: center; font-size: 22px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">
-                                    <div>
-                                        <font color="#fc3792"><b>Free Case Study: </b></font>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-75230-141-180-171-136-157" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; cursor: pointer; outline: none; font-family: Montserrat, Helvetica, sans-serif !important;"
-                                aria-disabled="false" data-google-font="Montserrat">
-                                <div class="ne elHeadline hsSize3 lh3 elMargin0 elBGStyle0 hsTextShadow0 deCapitalize deNormalLS mfs_21" style="text-align: center; font-size: 32px; color: rgb(32, 22, 82);" data-bold="inherit" data-gramm="false" spellcheck="false" contenteditable="false">
-                                    <font color="#fc3792"><b>"How My Agency Is Helping 'New Breed' Info Product &amp; Ecommerce Businesses Scale Aggressively"</b></font>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-75230-141-180-171-136-157" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; cursor: pointer; outline: none; font-family: Montserrat, Helvetica, sans-serif !important;" aria-disabled="false" data-google-font="Montserrat">
+              <div class="ne elHeadline hsSize3 lh3 elMargin0 elBGStyle0 hsTextShadow0 deCapitalize deNormalLS mfs_21" style="text-align: center; font-size: 32px; color: rgb(32, 22, 82);" data-bold="inherit" data-gramm="false" spellcheck="false" contenteditable="false">
+                <font color="#fc3792"><b>"How My Agency Is Helping 'New Breed' Info Product &amp; Ecommerce Businesses Scale Aggressively"</b></font>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const section = document.getElementById('section--55808-116-151-189'); // Reference to your div
+
+      const isInViewport = (element) => {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      };
+
+      const onScroll = () => {
+        if (isInViewport(section)) {
+          section.classList.add('visible'); // Add the visible class
+        }
+      };
+
+      window.addEventListener('scroll', onScroll);
+      onScroll(); // To check visibility on load
+    });
+  </script>
+
                 <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--40936" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
                     <div id="col-left-103" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
                         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
